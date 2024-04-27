@@ -1,0 +1,733 @@
+@font-face {
+    font-family: "Sedan";
+    font-family: "NunitoSans";
+    src: url(font/Sedan-Regular.ttf);
+    src: url(font/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: NunitoSans;
+}
+
+.index{
+    background-image: url(img/Fondo2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.landing{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+nav{
+    position:absolute;
+    top:10px;
+    margin-right: 800px ;
+    width:100% ;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:center;
+    
+}
+nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    border: 1px solid orangered;
+    background: orangered;
+    border-radius: 10px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none; 
+    color:azure;
+    font-weight: 500;
+    padding: 10px;
+    transition: 0.2s;
+    font-size: 0.9em;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid orangered;
+    color:azure;
+}
+.Imagen{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:160px ;
+    margin-top: -10px;
+    z-index: -5;
+    transition: 0.3s;
+}    
+
+.Imagen img{
+    height: 80vh;  
+}
+
+.Imagen img:hover{
+    height: 60vh;  
+}
+
+.Nombre{
+    position:absolute;
+    bottom: 0px;
+    left: 1000px;
+    top:-450px;
+    padding:20px 120px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.Nombre a{
+    color:azure;
+    font-size: 2.0em; 
+    font-family: Sedan;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.Nombre a:hover{
+    color:burlywood;
+    
+}
+
+.Definicion{
+    position: absolute;
+    bottom: 0px;
+    left: 600px;
+    margin-bottom: 0px;
+    padding:20px 120px 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 700px;
+    transition: 0.3s;
+}
+.Definicion .DefinicionBox h2{
+    position: relative;
+    font-size: 2.8em;
+    color: azure;
+    top:-80px;
+    margin-left:340px;
+    text-align: center;
+    transition: 0.3s;
+    display: inline-flex;
+    
+}
+.Definicion .DefinicionBox h2 span{
+    background:orangered;
+    color: azure;
+    padding: 0px 10px;
+    font-family: Sedan ;
+    font-weight: 800;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.Definicion .Tecnico{
+    font-size: 1.8em;
+    position: relative;
+    line-height: 1.4;
+    color:azure;
+    font-weight: 500;
+    top:-50px;
+    margin-left:280px;
+    display: inline-flex;
+    margin-bottom: 100px;
+    padding: 0 20px ;
+    text-align: justify;
+    margin-right: 140px;
+}
+.Definicion .Tecnico p{
+    padding: 0 40px 0;
+    font-family: NunitoSans;
+    transition: 0.3s;
+    width: 500px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.Definicion .Sobremi{
+    font-size: 1.4em;
+    position: relative;
+    line-height: 1.6;
+    color: azure;
+    font-weight: 500;
+    margin-left:280px;
+    padding: 0px 20px;
+    text-align: center;
+    top: -100px;
+    letter-spacing: 2px;
+    transition:0.5s ;
+
+}
+.Definicion .Sobremi a{
+    text-decoration: none;
+    text-transform: uppercase ;
+    color: orangered;
+    background: azure;
+    margin:10px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    transition:0.5s ;
+    font-family: Sedan;  
+}
+.Definicion .Sobremi a:hover{
+    background: orangered;
+    color:azure;
+    border-radius:20px;
+}
+
+footer{
+    position: fixed;
+    right:0px ;
+    bottom:0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 10px;
+    list-style: none;
+    transition: 0.3s;
+    font-size: 0.9em;
+}
+.Piepagina{
+    color: azure;
+    text-align: center;
+    margin: 20px;
+}
+.RedesSociales li{
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+}
+.RedesSociales li a{
+    color: azure;
+    font-size: 1.5em;
+    transition: 0.3;
+}
+
+.Contacto{
+    text-align: center;
+    background-image: url(img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: white;
+    font-family: NunitoSans;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.secformulario{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px
+}
+
+.Contactar{
+    position:absolute;
+    text-align: center;
+    padding: 30px;
+}
+.Contactar h1{
+    font-size: 2.3em;
+    margin-left:340px;
+    text-align: center;
+    font-family: Sedan;
+    transition: 0.3s;
+}
+
+.formulario{
+    max-width: 200px;
+    max-height: 200px;
+    position:absolute;
+    text-align: center; 
+    align-items: center; 
+    margin-right: 350px;
+    bottom: 400px;
+    text-decoration: none;
+}
+.formulario fieldset{
+    padding:5px 5px;
+    margin:5px 5px;
+    color:white;
+    font-family: Verdana;
+    font-weight:1.2em;
+    text-align: right;
+    transition: 0.3s;
+    border-color: transparent;
+}
+.formulario fieldset legend{
+    text-align: center;
+}
+.etiqueta{
+    margin:0 30px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.cvbody{
+    background-color: rgb(138, 167, 88);
+}
+.sectioncv{
+    position: relative;
+    min-height: 100vh;
+    padding: 200px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cv{
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 600px;
+    padding: 0px;
+    display: block;
+    max-width: 450px;
+    max-height: 200px;
+    text-align: justify;
+    
+}
+.cv h1{
+    color:crimson;
+    font-weight: 1.8em;
+    padding: 10px 40px;
+    font-family: Sedan;
+    font-size: 40px;
+    transition: 0.3s;
+}
+.descripcion{
+    font-family: NunitoSans;
+    font-size: 18px;
+    color:azure;
+}
+
+.datos{
+    position: relative;
+    margin: 30px;
+    padding: 0px;
+    display: block;
+    max-width: 550px;
+    max-height: 200px;
+    text-align: center;
+    top:30px;
+}
+.datos h2{
+    color:crimson;
+    font-weight: 1.8em;
+    padding: 10px 40px;
+    font-family: Sedan;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.puntos{
+    list-style: none;
+    font-size: 22px;
+    color:black;
+}
+
+.Habilidades{
+    position: relative;
+    margin: 40px;
+    padding: 0px;
+    display: block;
+    max-width: 550px;
+    max-height: 200px;
+    top:60px;
+    text-align: center;
+}
+.Habilidades h2 {
+    color:azure;
+    font-weight: 1.8em;
+    margin-right: 220px;
+    font-family: Bradley Hand ITC;
+    font-size: 40px;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.numeros{
+    list-style: none;
+    font-size: 22px;
+    display: inline-flex;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.experiencia{
+    position: relative;
+    margin: 40px;
+    padding: 10px;
+    display: block;
+    max-width: 550px;
+    max-height: 600px;
+    top:80px;
+    text-align:justify;
+}
+.experiencia h2{
+    color:azure;
+    font-weight: 1.8em;
+    font-family: Bradley Hand ITC;
+    font-size: 40px;
+    margin-left: 50px;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.experiencia p{
+    padding: 10px;
+    margin: 10px;
+    font-family: NunitoSans;
+    font-size: 18px;
+    color: azure;
+}
+.experiencia p b{
+    color: black;
+}
+.fotocv{
+    position:absolute;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1050px;
+    z-index: -5;
+    transition: 0.3s;
+    margin-left: 600px;
+}    
+.fotocv img{
+    height: 80vh;  
+}
+.fotocv img:hover{
+    height: 60vh;  
+}
+
+.formacion{
+    position: relative;
+    margin: 40px;
+    padding: 10px;
+    display: block;
+    max-width: 550px;
+    max-height: 600px;
+    top:-330px;
+    text-align:justify;
+    margin-left:580px;
+}
+.formacion h3{
+    color:azure;
+    font-weight: 1.8em;
+    font-family: Bradley Hand ITC;
+    font-size: 40px;
+    margin-left: 50px;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.formacion p{
+    padding: 10px;
+    margin: 10px;
+    font-family: NunitoSans;
+    font-size: 18px;
+    color:azure;
+}
+
+.circulo{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background:crimson ;
+    clip-path: circle(800px at right 1000px);
+    width: 100%;
+    height: 100%;
+    z-index:-1000;
+}
+
+.bodyquiensoy{
+    background: url(img/QuienSoy.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.quiensoy{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px; 
+}
+
+.quien1{
+    position: absolute;
+    margin: 30px 10px;
+    padding: 20px;
+    display: block;
+    max-width: 1120px;
+    max-height: 100px;
+    top:20px;
+    text-align:justify;
+}
+.quien1 p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.quien2{
+    position: absolute;
+    margin: 20px 10px;
+    padding: 10px;
+    max-width: 420px;
+    max-height: 600px;
+    top:300px;
+    text-align:justify;
+    margin-right: 1100px;
+}
+.quien2 p{
+    font-size: 24px;
+    font-weight: 2.4em;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.quien3{
+    position: absolute;
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    max-width: 400px;
+    max-height: 600px;
+    top:580px;
+    text-align:justify;
+    margin-right: 1100px;
+}
+.quien3 p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.quien4{
+    position: absolute;
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    max-width: 400px;
+    max-height: 600px;
+    top:550px;
+    text-align:justify;
+    margin-left: 700px;
+}
+.quien4 p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.quien5{
+    position: relative;
+    margin: 20px 10px;
+    padding: 10px;
+    display: block;
+    max-width: 1000px;
+    max-height: 200px;
+    top:900px;
+    text-align:justify;   
+}
+.quien5 p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.bodyproyectos{
+    background-image: url(img/MazingerZ.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    color: azure;
+    font-family: Sedan;
+    z-index:-1000 ;
+}
+
+.proyectos{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    text-align: justify;
+    background-image: url(img/Arco_wano.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    z-index: 10;
+}
+
+.navproyectos{
+    position:absolute;
+    top:10px;
+    margin-right: 1000px ;
+    width:100% ;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navproyectos h1{
+    margin: 0px;
+    top: 0px;
+    position: relative;
+    border: 1px solid orangered;
+    background: orangered;
+    border-radius: 15px;
+    color:azure;
+    font-weight: 500;
+    padding: 5px;
+    transition: 0.2s;
+    font-size: 1.9em;
+    font-family:Bradley Hand ITC;
+}
+
+.arkanoid{
+    position: absolute;
+    margin: 10px 10px;
+    padding: 20px;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    top:100px;
+    text-align:justify;
+    align-items: center;
+    border: 2px solid blue; 
+}
+.arkanoid p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 20px;
+    transition: 0.3s;
+    max-width: 900px;
+    display: inline-block;
+    color: azure;
+    font-family: NunitoSans;
+}
+.arkanoid img{
+    margin: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    position:absolute;
+    justify-content: flex-end;
+}
+.marvel{
+    position: absolute;
+    margin: 10px 10px;
+    padding: 20px;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    top:700px;
+    text-align:justify;
+    align-items: center;
+    margin-left: 50px;
+    border: 2px solid orangered;
+}
+.marvel p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 380px;
+    transition: 0.3s;
+    max-width: 1000px;
+    display: inline-block;
+    padding: 40 20px;
+    top:10px;
+}
+.marvel img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    position:absolute;
+    display: flex;
+    margin-right: 0px;
+}
+
+.breaking{
+    position: absolute;
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    top:1380px;
+    text-align:justify;
+    border: 2px solid orangered;
+    align-items: center;
+    
+}
+.breaking p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-left: 20px;
+    transition: 0.3s;
+    margin-left: 600px;
+    max-width: 900px;
+    display: inline-block;
+    padding: 4px;
+    border: 2px solid blue; 
+}
+.breaking img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    position:absolute;
+    display: flex;
+    margin-right: 0px;
+}
+
+.tronos{
+    position: relative;
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    top:920px;
+    text-align:justify;
+    justify-content: flex-end; 
+    align-items: center; 
+    
+}
+.tronos p{
+    font-size: 24px;
+    font-weight: 2.2em;
+    margin-right: 480px;
+    transition: 0.3s;
+    max-width: 900px;
+    max-height: 100%;
+}
+.tronos img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    position:absolute;
+    display: block;
+    margin-right: 0px;
+}
